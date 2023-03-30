@@ -5,9 +5,30 @@
 #         source: https://api.apis.guru/v2/specs/wikimedia.org/1.0.0/swagger.yaml
 
 sources:
+  - name: Wiki
+    handler:
+      openapi:
+        source: https://api.apis.guru/v2/specs/wikimedia.org/1.0.0/swagger.yaml
+
   - name: Covid
     handler:
       graphql:
         endpoint: https://covid-19-two-rust.vercel.app/api/graphql
+  - name: Vending
+    handler:
+      graphql:
+        endpoint: http://host.docker.internal:8080/query
+#       cache:
+#               ttl: 60
+#               store: memory
+    
+
+# transforms:
+#   - cache
+#   - filter-schema
+#   - rename-root-types
+#   - extract-schema
+#   - wrap-schema
+
 serve:
   hostname: 0.0.0.0 
