@@ -1,23 +1,26 @@
-# sources:
-#   - name: Wiki
-#     handler:
-#       openapi:
-#         source: https://api.apis.guru/v2/specs/wikimedia.org/1.0.0/swagger.yaml
-
 sources:
-  - name: Wiki
+  - name: blueprint-service-openapi
     handler:
       openapi:
         source: https://api.apis.guru/v2/specs/wikimedia.org/1.0.0/swagger.yaml
-
-  - name: Covid
+  - name: kubectl-service-graphql
     handler:
       graphql:
         endpoint: https://covid-19-two-rust.vercel.app/api/graphql
-  - name: Vending
+  - name: vending-service-graphql
     handler:
       graphql:
         endpoint: http://host.docker.internal:8080/query
+  # - name: cloudflare-service-openapi
+  #   handler:
+  #     graphql:
+  #       endpoint: http://host.docker.internal:8080/query
+
+
+
+
+
+
 #       cache:
 #               ttl: 60
 #               store: memory
