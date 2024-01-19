@@ -1,4 +1,4 @@
-# GraphQL Mesh Docker (supports Kubernetes/Helm)
+# GraphQL Mesh Docker 
 
 <img src="img/mesh.png" width=50px> on <img src="img/docker.png" width=50px> or  <img src="img/kubernetes.png" width=50px> /  <img src="img/helm.png" width=50px>
 
